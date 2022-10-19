@@ -1,0 +1,100 @@
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayish-Blue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  
+  
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.6rem;
+
+  background-color: var(--DarkBlue);
+
+}
+
+.card{
+  width: 36.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  background-color: var(--DarkGrayish-Blue);
+  padding-block: 2.5rem;
+  padding-block-end: 5.5rem;
+  padding-inline:2rem;
+  text-align: center;
+  border-radius: 1.5rem;
+
+  position: relative;
+}
+
+.title{
+  color: var(--NeonGreen);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+
+.parrafo{
+  font-size: 2.5rem;
+  color: var(--LightCyan);
+}
+
+.btn{
+  display: inline-block;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-inline: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: -30px;
+  left: 42%;
+
+  background-color: var(--NeonGreen);
+  cursor: pointer;
+}
+
+.btn:hover{
+  filter: brightness(1.25);
+}
+
+.icon{
+  width: 25px;
+  height: 25px;
+}
+
+
+@media (min-width:80rem){
+  .card{
+    width: 50rem;
+  }
+  .btn{
+    left: 44%;
+  }
+}
